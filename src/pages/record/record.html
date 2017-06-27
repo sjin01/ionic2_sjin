@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      历史开奖记录
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of balls" >
+      <h2 class="ball-title">
+        {{item.code}}
+        <span class="date">{{item.date}}</span>
+      </h2>
+      <p class="ball-content">
+        <span *ngFor="let redBall of item.redBalls">{{redBall}}</span>
+        <span>{{item.blueBall}}</span>
+      </p>
+    </ion-item>
+  </ion-list>
+</ion-content>
