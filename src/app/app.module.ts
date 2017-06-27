@@ -3,11 +3,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
 
-import {RecordPage} from '../pages/record/record';
-import {ContactPage} from '../pages/contact/contact';
-import {HomePage} from '../pages/home/home';
-import {TabsPage} from '../pages/tabs/tabs';
-
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {AppVersion} from '@ionic-native/app-version';
@@ -28,6 +23,13 @@ import {FileService} from "../providers/FileService";
 import {Helper} from "../providers/Helper";
 import {Utils} from "../providers/Utils";
 
+import {RecordPage} from '../pages/record/record';
+import {ContactPage} from '../pages/contact/contact';
+import {HomePage} from '../pages/home/home';
+import {TabsPage} from '../pages/tabs/tabs';
+
+import {RecordModule} from '../pages/record/record.module'
+
 @NgModule({
   declarations: [
     MyApp,
@@ -39,6 +41,7 @@ import {Utils} from "../providers/Utils";
   imports: [
     HttpModule,
     BrowserModule,
+    RecordModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

@@ -1,12 +1,12 @@
 page-record {
 
-  .ball-content{
-    line-height:30px;
-    span + span{
+  .ball-content {
+    line-height: 30px;
+    span + span {
       margin-left: 10px;
     }
 
-    span{
+    span {
       display: inline-block;
       text-align: center;
       width: 24px;
@@ -17,21 +17,29 @@ page-record {
       border-radius: 20px;
       font-weight: bold;
 
-      &:last-child{
+      &:last-child {
         background-color: color($colors, primary);
       }
     }
   }
-  .ball-title{
+
+  .ball-title {
     display: flex;
     justify-content: space-between;
 
-    line-height:30px;
-    .date{
+    line-height: 30px;
+    .date {
       color: #8c8c8c;
       font-size: 14px;
     }
   }
 
+  .ball-detail {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    // background-color: color($colors, light);
+  }
 
 }
