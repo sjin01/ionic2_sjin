@@ -13,10 +13,9 @@
         {{item.code}}
         <span class="date">{{item.date}}</span>
       </h2>
-      <p class="ball-content">
-        <span *ngFor="let redBall of item.redBalls">{{redBall}}</span>
-        <span>{{item.blueBall}}</span>
-      </p>
+
+      <components-ball-content [reds]="item.redBalls" blue="{{item.blueBall}}"></components-ball-content>
+
       <div class="ball-detail">
         <span>三分区比:{{get3fq(item)}}</span>
         <span>大小比:{{getDx(item)}}</span>

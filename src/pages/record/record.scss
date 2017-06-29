@@ -1,28 +1,5 @@
 page-record {
 
-  .ball-content {
-    line-height: 30px;
-    span + span {
-      margin-left: 10px;
-    }
-
-    span {
-      display: inline-block;
-      text-align: center;
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
-      background-color: color($colors, danger);
-      color: white;
-      border-radius: 20px;
-      font-weight: bold;
-
-      &:last-child {
-        background-color: color($colors, primary);
-      }
-    }
-  }
-
   .ball-title {
     display: flex;
     justify-content: space-between;

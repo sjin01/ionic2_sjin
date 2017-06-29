@@ -28,7 +28,9 @@ import {ContactPage} from '../pages/contact/contact';
 import {HomePage} from '../pages/home/home';
 import {TabsPage} from '../pages/tabs/tabs';
 
-import {RecordModule} from '../pages/record/record.module'
+import {RecordModule} from '../pages/record/record.module';
+
+import {BallContentComponent} from '../components/ball-content/ball-content';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import {RecordModule} from '../pages/record/record.module'
     RecordPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    BallContentComponent
   ],
   imports: [
     HttpModule,
